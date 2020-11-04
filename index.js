@@ -1,5 +1,6 @@
 const ordenamiento = (numeros) => {
     let temp;
+
     for (let i = 0; i < numeros.length; i++) {
         for (let j = 0; j < numeros.length; j++) {
             if (numeros[i] < numeros[j]) {
@@ -42,23 +43,53 @@ const duplicidad = (arreglo) => {
     return new Set(arreglo);
 };
 
-const parentesis = (pares) => {
-    let par = pares.split('');
-    let i = 0;
+const balanceo = (pares) => {
+    const pila = [];
+
+    for (let unico of pares) {
+        if (unico === '(' || unico === '[' || unico === '{') {
+            pila.push(unico);
+        } else if (unico === ')') {
+            if (pila.length === 0) {
+                return false;
+            }
+
+            if (pila[pila.length - 1] === '(') pila.pop();
+        } else if (unico === ']') {
+            if (pila.length === 0) {
+                return false;
+            }
+
+            if (pila[pila.length - 1] === '[') pila.pop();
+        } else if (unico === '}') {
+            if (pila.length === 0) {
+                return false;
+            }
+
+            if (pila[pila.length - 1] === '{') pila.pop();
+        }
+    }
+
+    return pila.length === 0;
 };
 
 const horarios = (clases) => {
-    /*const hora = n
-    ew Date().to;
-    const inicio = new Date().setUTCHours(12, 00, 00, 00);
-    return inicio;*/
+    let salones = 0;
+
+    const periodo = [
+        { inicio: '11:00', final: '14:00' },
+        { inicio: '12:00', final: '15:00' },
+        { inicio: '14:30', final: '16:00' },
+    ];
 };
+
+//console.log(parentesis('(([))'));
 
 module.exports = {
     ordenamiento,
     sumatoria,
     k_esimo,
     duplicidad,
-    parentesis,
+    balanceo,
     horarios,
 };

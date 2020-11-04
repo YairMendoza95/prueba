@@ -2,7 +2,11 @@
 
 ### **1. Escribir una función que reciba un arreglo de números y obtenga el subarreglo másgrande en el que cada elemento del subarreglo sea mayor que el anterior.**
 
->
+> El ejercicio fue un poco complicado ya que no recordaba sobre los métodos de ordenamiento, pero una vez que revise apuntes que tenía de la universidad me pude guiar para encontrar la solución.
+
+> 1. Se inicia creando una variable temporal la cual contendrá temporalmente el valor menor.
+> 2. Luego se crean dos ciclos anidados, esto para que se pueda comparar el cada elemento del arreglo con todo el arreglo.
+> 3. Se evalúa evalúan los valores del arreglo y se asignan a la variables.
 
 ### **2. Escribir una función que reciba 2 enteros no negativos n y m y obtenga el resultado de n+(n+1)+(n+2)+...+m**
 
@@ -22,7 +26,8 @@
 
 ### **5. Dada una cadena de paréntesis y corchetes escribe una función que regresa si la cadena está bien balanceada**
 
->
+> En la universidad había creado un ejercicio similar.
+> Aquí se inicia con arreglo vacío, el cual almacenará los signos de apertura, después se itera la cadena, y se evalúa cada signo, y cada que encuentre un paréntesis, corchete o llave de apertura, se agregará al arreglo, después se evalua si son signos de cierre y de la misma manera se evalua si la pila está vacía, en caso de estar vacía el devuelve un false, debido a que, debería de haber un signo, igual, se evalúa si el último elemento de la pila es la contraparte del signo evaluado, de ser así, se elimina el elemento del arreglo.
 
 ### 6.Tienes un conjunto de clases que tienen una hora de inicio y una de final, hay que acomodarlas en el menor número de salones sin que se traslapan, una clase de 11:00 a 14:00 no puede estar en el mismo salón que una de 12:00 a 15:00.
 
