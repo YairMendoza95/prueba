@@ -31,4 +31,4 @@
 
 ### 6.Tienes un conjunto de clases que tienen una hora de inicio y una de final, hay que acomodarlas en el menor número de salones sin que se traslapan, una clase de 11:00 a 14:00 no puede estar en el mismo salón que una de 12:00 a 15:00.
 
-> Para resolver este problema fue más complicado
+> Lo más dificil fue tener la lógica en cuanto a como obtener 

@@ -76,14 +76,24 @@ const balanceo = (pares) => {
 const horarios = (clases) => {
     let salones = 0;
 
-    const periodo = [
-        { inicio: '11:00', final: '14:00' },
-        { inicio: '12:00', final: '15:00' },
-        { inicio: '14:30', final: '16:00' },
-    ];
+    for (let i = 0; i < clases.length; i++) {
+        if (i === 0) {
+            salones++;
+            continue;
+        }
+
+        
+    }
+    return salones;
 };
 
-//console.log(parentesis('(([))'));
+const periodos = [
+    { inicio: '11:00', final: '14:00' },
+    { inicio: '12:00', final: '15:00' },
+    { inicio: '14:30', final: '16:00' },
+];
+
+console.log();
 
 module.exports = {
     ordenamiento,
